@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400;500");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400;500&family=UnifrakturMaguntia&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway, 'sans-serif';
+}
+body {
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    height: 100vh;
+    position: relative;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Header Section / Component styling */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #000;
+    border-bottom: 0.5px solid #ddd
+}
+
+.logo {
+    color: #ff0000;
+    cursor: default;
+    font-size: 1rem;
+    margin-left: 30px;
+
+}
+
+.navbar-items {
+    display: flex;
+    list-style: none;
+
+}
+
+.nav-link {
+    
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 150px;
+    color: #fff;
+    font-size: 17px
+}
+.nav-link:hover {
+    color: red;
+    cursor: pointer;
+    
+    transition: .2s;
+}
+
+.nav-link:active {
+    color: lightcoral;
+}
+
+/*  Hero Component */
+
+.hero-container {
+    background-color: #000;
+    width: 100%;
+    height: 360px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+
+    border-radius: 3px;
+}
+
+.profile-image {
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+}
+
+.bio {
+    
+    width: 600px;
+    line-height: 1.8;
+}
+
+.hero-container .bio > h1 {
+    margin-bottom: 15px;
+}
+
+.hero-container .bio > p {
+    line-height: 1.8;
+}
+
+.hero-container .bio > button {
+    margin-top: 20px;
+    padding: 5px;
+    font-size: .9rem;
+    font-weight: 500;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-container .bio > button:hover {
+    font-size: 0.91rem;
+    transition: .3s
+}
+
+.hero-container .bio > button:active {
+    background-color: lightcoral;
+} 
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: red;
+    gap: 10px;
+    border-radius: 5px;
+    color: #fff;
+    width: 150px;
+    height: 50px;
+}
+.content > p {
+    font-weight: 600;
+}
+.content > img {
+    width: 26px;
+    height: 25px
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 450px;
+    height: 350px;
+    background-color: #fff;
+    overflow-y: auto;
+    scrollbar-width: 0;
+    -ms-overflow-style: none;
+    border-radius: 10px;
+    position: relative;
+    
+    padding: 50px;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.6);
+}
+.skills::-webkit-scrollbar {
+    display: none;
+}
+.skill-header {
+    position: absolute;
+    top: 20px;
+    left: 160px;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+
+.projects-container {
+    width: 1100px;
+    height: 350px;
+    background-color:aqua;
+    overflow-y: auto;
+    scrollbar-width: 0;
+    -ms-overflow-style: none;
+    border-radius: 10px;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.6);
+    margin-left: 70px;
+    background-color: #fff;
+}
+
+.pros-skills {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.footer {
+    background-color: #000;
+    height: 90px;
+    margin-top: 20px;
+}
